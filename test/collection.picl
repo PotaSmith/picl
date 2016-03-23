@@ -1,0 +1,22 @@
+fun main()
+    list << []
+    dict << [:]
+
+    list << [1, 2, 3]
+    dict << [a: 1, b: 2, c: 3]
+    dict << ["a" => 1, "b" => 2, "c" => 3]
+
+    list[] << 1 // 追加
+    dict[] << d:4 // 追加
+
+    list[] << 1 << 2 << 3 // これも可能
+    dict[] << d:4 << e:5 // これも可能
+
+
+    echo list[1] // 1
+　  echo dict[a:] // 1
+    echo dict["a"] // 1
+
+
+    a, b << list
+    a, b << dict

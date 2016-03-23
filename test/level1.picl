@@ -1,0 +1,49 @@
+seq main =
+    pub abc << 1
+    pub abc = 1
+    pub abc() =
+        abc
+        let abc = abc
+seq main
+    pub abc << 1
+    pub abc = 1
+    pub abc() =
+        abc
+        let abc = abc
+
+fun functionA() =
+    abc
+    let abc = abc
+fun functionA()
+    abc
+    let abc = abc
+
+cla ClassA =
+    pub abc << 1
+    pub abc = 1
+    pub abc() =
+        abc
+        let abc = abc
+cla ClassA
+    pub abc << 1
+    pub abc = 1
+    pub abc() =
+        abc
+        let abc = abc
+
+beh BehaviorA =
+    pub abc() =
+        abc
+        let abc = abc
+beh BehaviorA
+    pub abc() =
+        abc
+        let abc = abc
+
+
+def DefineA = "abc" | "abc"
+def DefineA
+    ClassA | ClassA
+def DefineA = ClassA | ClassA
+
+

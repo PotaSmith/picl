@@ -1,0 +1,45 @@
+fun functionA()
+    b << a
+    func_b(1)
+    let func_b(c) = a + b + c
+    let func_b(c) = a + b + c
+
+fun func(a,b) = a + func(a - 1, b)
+fun func(1,b) = b
+
+fun func(a, b){c, d} = a
+fun func(a, b) = func(1, 2, c:2, d:4)
+
+
+fun func(ClassB a) = 1
+
+fun func_a(a, b) = a(10) + b(20)
+
+fun func_b() = func_a(func_b1, func_b2)
+    let func_b1(a) = a + 1
+    let func_b2(a) = a + 2
+
+fun sample()
+    echo func_b()
+
+fun func_b() = &func_a(-, 10)
+
+
+fun withoutType(a) = a.SuperA.func_a(1)
+fun withType(BehaviorA a) = a.func_a(1)
+
+
+fun func_b() =     funcA("some", funcB(123, funcC(funcD("some", funcE(false)))))
+fun func_b() =     funcA(funcB(funcC(funcD(funcE(false), "some")), 123), "some")
+
+fun func_b() =     funcA("some") $ funcB(123) $ funcC() $ funcD("some") $ funcE(false)
+fun func_b() =     funcE(false) ^ funcD("some") ^ funcC() ^ funcB(123) ^ funcA("some")
+
+fun func_b() =     &funcA("some") $ funcB(123) $ funcC $ funcD("some") $ funcE(false)
+fun func_b() =     &funcE(false) ^ funcD("some") ^ funcC() ^ funcB(123) ^ funcA("some")
+
+
+fun sort(comparetor) = 
+    comparetor(a, b)
+
+fun func_b() = sort{a.to_s <=> b.to_s}.each

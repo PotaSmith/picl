@@ -1,0 +1,22 @@
+cla MyInt
+    pub value << 0
+
+    pub new(a) = value << a
+    pub add(a) = return MyInt.new(value + a.get_value())
+    pub sub(a) = return MyInt.new(value - a.get_value())
+    pub get_value() = return value
+    pub returnable() = return value < 2
+    pub to_s() = return value
+
+
+
+fun fib(arg) =
+    if arg.returnable() then return arg else return fib(arg.sub(MyInt.new(2))).add(fib(arg.sub(MyInt.new(1)))) end
+
+fun main =
+    1 + 1
+    echo "result is \n"
+    1 + 1
+    echo "${fib(MyInt.new(30)).to_s()}\n"
+    1 + 1
+

@@ -1,0 +1,74 @@
+fun main() =
+     echo "aaaaa" 
+fun a() = echo "bbb"
+fun a() =
+    b + c ; c +1
+    a + b + 
+    - c
+    - c + 1
+    d + e
+
+    let local = a + b
+    let local =
+        a << a + b
+        a << &f(aaaa)
+
+cla A =
+    pub a << 1
+    pub b(a,b) = a + c(b,a
+
+
+    ) 
+        1 `Bit.shift` 10 + 1
+        let c(a) = a * 100
+
+    pri c(a,b) = a + b
+
+cla A = pub func_a(a,b) = c << a + func_b(a, b); d << func_c(a, c) + 1; return d * 2; let func_b(c,d) = c + d; let func_c(c,d) = e << c + d; e + 1; pub var_a << 1
+
+fun a() = 1
+fun b(a,b) = a + c(b)
+    let c(a) = a * 10
+    let c(a) = a * 10
+    let c(a) = a * 10
+
+fun f(a,b) = a / b + 1
+fun f(a,0) = 1 + 1
+
+cla B =
+    pub a = b + c + "abc"
+    pub a = b + c + __'abcd'__
+    pub a = b + c + _______'abcde'_______
+    pri a << 1 + 1
+    pub a << 1 + 1
+cla C =
+    pub a = b + c
+        a << ___'here document is like a string literal. that is start with _' and end with '_.
+         ander score .ander score length could changed if you want.'___
+         b + d
+
+         echo "aaaaa"
+         b
+         23
+    pub to_string = ceil(_value) ^ _to_sring()
+something if a + 1
+condition then something
+condition else something
+condition then something else something
+
+something while condition
+something while condition if a == -1
+condition repeat something
+condition repeat something else something
+         
+    pub a = b + c ; pub a << 1 + 1
+    pub a << 1 + 1
+    pub a =
+        b + c ; pub a << 1 + 1
+    pub a =
+        b + c 
+         a << 1 + 1
+        b << 100
+        - 1*2
+        - 2
+        - 3

@@ -1,0 +1,36 @@
+fun main()
+    return false
+    return false
+
+    while condition then stmts end
+    if condition then 1+1 end
+
+
+
+    if condition then stmts else stmts end
+
+
+    list each a
+        when expr
+            expr
+        when expr -> expr
+        when expr
+            expr
+    end
+
+
+    list each arg -> expr end 
+    list map arg -> expr end
+    list reduce arg,arg -> expr end
+
+    list filter b -> b + 1 reduce a,b -> a + b end
+
+    list each arg when value -> expr end
+    list map arg when value -> expr end
+
+
+    case a
+        when expr -> expr
+        when expr -> expr
+        when expr -> expr
+    end

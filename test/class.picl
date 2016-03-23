@@ -1,0 +1,20 @@
+cla ClassA
+    pub value << 1
+    pub func_a(a) = value << a
+    pub func_b(a) = value << a + 2
+    pub func_c() = return value
+
+cla ClassB : SupClassA
+    ali sub_a = SupClassA.func_a
+
+    pub value << 2
+    pub func_b(b) = sub_a(b)
+
+        let func_b1(a) = a + 1
+        let func_b2(a) = a + 2
+
+fun main =
+    a << ClassA.new()
+    a.func_a(1)
+    a.func_b(1)
+    echo "\n${a.func_c()}\n"

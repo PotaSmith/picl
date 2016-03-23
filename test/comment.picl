@@ -1,0 +1,18 @@
+fun functionA() // aaa
+    b << a // aaaaaaa
+// aaaaaa
+    func_b(1)
+/*
+aaaaaa
+*/
+/* aaaaaa
+*/
+/* aaaaaa
+aaaaaa */
+
+/* aaaaaa
+/* aaaaaa
+* aaaaaa
+aaaaaa */
+    let func_b(c) = a + b + c
+    let func_b(c) = a + b + c

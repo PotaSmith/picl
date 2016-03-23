@@ -1,0 +1,19 @@
+seq main =
+    pub const_a = 1
+    pub var_a << 1
+    pub main = aaaaa
+    catch ex("zero divide") = echo "zero divide error cause"
+    catch ex(message) = echo "catch all error"
+    catch my_error(error) = echo "MyError occure : ${error.to_string()}"
+
+seq root
+    pub main = aaaaa
+    pub const_a = 1
+    pub var_a << 1
+    catch ex("zero divide") = echo "zero divide error cause"
+    catch ex(message) = echo "catch all error"
+    catch my_error(error) = echo "MyError occure : ${error.to_string()}"
+    catch my_error(error)
+        echo "MyError occure : ${error.to_string()}"
+    catch (message) = echo "catch all error"
+

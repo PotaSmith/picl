@@ -1,0 +1,36 @@
+beh BehaviorA
+    pub a << 1
+    pub func_a(b) = a + 1 // 実装も持てます。
+    pub vir func_b(c)     // 実装を要求します。virtualの略
+    pub vir const_a       // 定数を要求します。virtualの略
+
+
+beh BehaviorA
+    pub func_a(a) = a + 1 // 実装も持てます。
+    pub vir func_b(a) // 実装を要求します。virtualの略
+    pub vir func_b(a) = aa // デフォルト値はあり
+
+cla ClassA : BehaviorA
+    pub BehaviorA.func_b = ...
+
+
+a.BehaviorA.methodA
+
+
+a.methodA
+
+beh BehaviorA : BehaviorB = ...
+
+
+beh BehaviorA : { BehaviorB, BehaviorC } = ...
+
+
+class ClassA : BehaviorA // 何も指定しないと最初に書かれたものBehaviorB
+class ClassA : BehaviorA{ BehaviorB } // 初期を指定
+
+
+class ClassA : BehaviorA
+pub change_state()
+    BehaviorA << BehaviorC
+
+

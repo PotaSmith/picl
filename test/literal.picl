@@ -1,0 +1,38 @@
+fun main()
+    123
+    123.456
+    057
+    0x57
+    "abc"
+    true
+    false
+    null
+    void
+    [1, 2, 3]
+    [a: 1, b: 2, c: 3]
+
+    'abc'@r
+
+    echo ""
+    echo "a"
+    echo "a\n"
+    echo "${1+1}"
+    echo "${1+1}${2+2}"
+    echo "\n${1+1} 111\n"
+
+    a << 1
+    b << 10
+    echo "
+        a is ${a}
+        b is ${b}
+        a + b = ${a + b}
+        b + 2 = ${b + 2}
+        bbbbbbb\n
+    \n"
+
+    a << __'here document like string literal is start with _' and end with '_.
+     ander score length was could change if you want.'__
+
+    b << ___'here document like string literal is start with _' and end with '_.
+     ander score length was could change if you want.'___
+
